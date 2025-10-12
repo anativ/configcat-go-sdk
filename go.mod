@@ -1,4 +1,5 @@
-module github.com/configcat/go-sdk/v9
+module github.com/antiv/configcat-go-sdk
+
 
 go 1.18
 
