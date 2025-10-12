@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	configcat "github.com/configcat/go-sdk/v9"
-	"github.com/configcat/go-sdk/v9/configcattest"
+	configcat "github.com/antiv/configcat-go-sdk/v9"
+	"github.com/antiv/configcat-go-sdk/v9/configcattest"
 	qt "github.com/frankban/quicktest"
 )
 

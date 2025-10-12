@@ -2,9 +2,10 @@ package configcattest
 
 import (
 	"fmt"
-	configcat "github.com/configcat/go-sdk/v9"
 	"strconv"
 	"strings"
+
+	configcat "github.com/antiv/configcat-go-sdk/v9"
 )
 
 const invalidType configcat.SettingType = -1

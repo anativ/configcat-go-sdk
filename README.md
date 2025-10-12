@@ -7,9 +7,9 @@ ConfigCat is a feature flag and configuration management service that lets you s
 
 ConfigCat is a <a target="_blank" href="https://configcat.com">hosted feature flag service</a>. Manage feature toggles across frontend, backend, mobile, desktop apps. <a target="_blank" href="https://configcat.com">Alternative to LaunchDarkly</a>. Management app + feature flag SDKs.
 
-[![Build Status](https://github.com/configcat/go-sdk/actions/workflows/go-ci.yml/badge.svg?branch=v9)](https://github.com/configcat/go-sdk/actions/workflows/go-ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/configcat/go-sdk/v9)](https://goreportcard.com/report/github.com/configcat/go-sdk/v9)
-[![GoDoc](https://godoc.org/github.com/configcat/go-sdk?status.svg)](https://pkg.go.dev/github.com/configcat/go-sdk/v9)
+[![Build Status](https://github.com/antiv/configcat-go-sdk/actions/workflows/go-ci.yml/badge.svg?branch=v9)](https://github.com/antiv/configcat-go-sdk/actions/workflows/go-ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/antiv/configcat-go-sdk/v9)](https://goreportcard.com/report/github.com/antiv/configcat-go-sdk/v9)
+[![GoDoc](https://godoc.org/github.com/antiv/configcat-go-sdk?status.svg)](https://pkg.go.dev/github.com/antiv/configcat-go-sdk/v9)
 [![Sonar Coverage](https://img.shields.io/sonar/coverage/configcat_go-sdk?logo=SonarCloud&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/project/overview?id=configcat_go-sdk)
 [![Sonar Quality Gate](https://img.shields.io/sonar/quality_gate/configcat_go-sdk?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/project/overview?id=configcat_go-sdk)
 
@@ -17,7 +17,7 @@ ConfigCat is a <a target="_blank" href="https://configcat.com">hosted feature fl
 
 ### 1. Install the package with `go`
 ```bash
-go get github.com/configcat/go-sdk/v9
+go get github.com/antiv/configcat-go-sdk/v9
 ```
 
 ### 2. Go to the <a href="https://app.configcat.com/sdkkey" target="_blank">ConfigCat Dashboard</a> to get your *SDK Key*:
@@ -26,7 +26,7 @@ go get github.com/configcat/go-sdk/v9
 
 ### 3. Import the *ConfigCat* client package to your application
 ```go
-import "github.com/configcat/go-sdk/v9"
+import "github.com/antiv/configcat-go-sdk/v9"
 ```
 
 ### 4. Create a *ConfigCat* client instance:

@@ -28,10 +28,10 @@
        ```
 - Via Github release 
 
-  Create a new [Github release](https://github.com/configcat/go-sdk/releases) with a new version tag and release notes.
+  Create a new [Github release](https://github.com/antiv/configcat-go-sdk/releases) with a new version tag and release notes.
 
 ## Validate new version on go.dev
-https://pkg.go.dev/mod/github.com/configcat/go-sdk
+https://pkg.go.dev/mod/github.com/antiv/configcat-go-sdk
 
 ## Update import examples in local README.md
 

@@ -4,13 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/configcat/go-sdk/v9/configcatcache"
 	"io"
 	"net/http"
 	"os"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/antiv/configcat-go-sdk/v9/configcatcache"
 )
 
 const (

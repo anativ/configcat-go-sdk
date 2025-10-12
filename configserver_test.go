@@ -5,13 +5,14 @@ import (
 	"crypto/rand"
 	"encoding/json"
 	"fmt"
-	"github.com/configcat/go-sdk/v9/configcatcache"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/antiv/configcat-go-sdk/v9/configcatcache"
 )
 
 type configServer struct {

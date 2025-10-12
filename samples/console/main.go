@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/configcat/go-sdk/v9"
+
+	"github.com/antiv/configcat-go-sdk/v9"
 )
 
 func main() {

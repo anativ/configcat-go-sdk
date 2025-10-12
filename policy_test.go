@@ -3,11 +3,12 @@ package configcat
 import (
 	"context"
 	"fmt"
-	"github.com/configcat/go-sdk/v9/configcatcache"
 	"net/http"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/antiv/configcat-go-sdk/v9/configcatcache"
 
 	qt "github.com/frankban/quicktest"
 )
