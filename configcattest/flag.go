@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	configcat "github.com/antiv/configcat-go-sdk/v9"
+	configcat "github.com/alonnativ/configcat-go-sdk/v9"
 )
 
 const invalidType configcat.SettingType = -1

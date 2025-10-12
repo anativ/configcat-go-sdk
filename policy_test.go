@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/antiv/configcat-go-sdk/v9/configcatcache"
+	"github.com/alonnativ/configcat-go-sdk/v9/configcatcache"
 
 	qt "github.com/frankban/quicktest"
 )

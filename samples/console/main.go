@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/antiv/configcat-go-sdk/v9"
+	"github.com/alonnativ/configcat-go-sdk/v9"
 )
 
 func main() {

@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/antiv/configcat-go-sdk/v9/configcatcache"
+	"github.com/alonnativ/configcat-go-sdk/v9/configcatcache"
 )
 
 const (
