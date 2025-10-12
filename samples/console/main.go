@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/configcat/go-sdk/v7"
+	"github.com/configcat/go-sdk/v9"
 )
 
 func main() {
 	client := configcat.NewCustomClient(configcat.Config{
-		SDKKey: "PKDVCLf-Hq-h-kCzMp-L7Q/HhOWfwVtZ0mb30i9wi17GQ",
-		Logger: configcat.DefaultLogger(configcat.LogLevelInfo),
+		SDKKey:   "PKDVCLf-Hq-h-kCzMp-L7Q/HhOWfwVtZ0mb30i9wi17GQ",
+		LogLevel: configcat.LogLevelInfo,
 	})
 
 	// create a user object to identify your user (optional)
