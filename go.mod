@@ -1,4 +1,4 @@
-module github.com/alonnativ/configcat-go-sdk/v9
+module github.com/anativ/configcat-go-sdk/v9
 
 go 1.18
 

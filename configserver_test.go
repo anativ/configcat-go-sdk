@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alonnativ/configcat-go-sdk/v9/configcatcache"
+	"github.com/anativ/configcat-go-sdk/v9/configcatcache"
 )
 
 type configServer struct {

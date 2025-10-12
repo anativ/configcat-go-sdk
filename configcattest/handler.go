@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"sync"
 
-	configcat "github.com/alonnativ/configcat-go-sdk/v9"
+	configcat "github.com/anativ/configcat-go-sdk/v9"
 )
 
 // Handler is a http.Handler that serves up configcat flags.
