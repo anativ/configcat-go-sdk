@@ -109,6 +109,10 @@ type Config struct {
 
 	// Offline indicates whether the SDK should be initialized in offline mode or not.
 	Offline bool
+
+	// ServiceName is an optional identifier for the service using the SDK.
+	// When set, it will be included in the User-Agent header of HTTP requests.
+	ServiceName string
 }
 
 // ConfigCache is a cache API used to make custom cache implementations.

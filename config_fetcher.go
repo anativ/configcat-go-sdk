@@ -48,6 +48,7 @@ type configFetcher struct {
 	changeNotify      func()
 	defaultUser       User
 	pollingIdentifier string
+	serviceName       string
 	overrides         *FlagOverrides
 	hooks             *Hooks
 	offline           uint32
@@ -91,6 +92,7 @@ func newConfigFetcher(cfg Config, logger *leveledLogger, defaultUser User) fetch
 		doneInitialGet:    make(chan struct{}),
 		defaultUser:       defaultUser,
 		pollingIdentifier: pollingModeToIdentifier(cfg.PollingMode),
+		serviceName:       cfg.ServiceName,
 	}
 	f.ctx, f.ctxCancel = context.WithCancel(context.Background())
 	if cfg.Offline {
@@ -390,7 +392,11 @@ func (f *configFetcher) fetchHTTPWithoutRedirect(ctx context.Context, baseURL st
 	if err != nil {
 		return nil, &fetcherError{EventId: 0, Err: err}
 	}
-	request.Header.Set("X-ConfigCat-UserAgent", "ConfigCat-Go/anativ-"+f.pollingIdentifier+"-"+version)
+	userAgent := "ConfigCat-Go/tmw-" + f.pollingIdentifier + "-" + version
+	if f.serviceName != "" {
+		userAgent = "ConfigCat-Go/tmw-" + f.serviceName
+	}
+	request.Header.Set("X-ConfigCat-UserAgent", userAgent)
 
 	if prevConfig != nil && prevConfig.etag != "" {
 		request.Header.Add("If-None-Match", prevConfig.etag)
