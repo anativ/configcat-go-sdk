@@ -390,7 +390,7 @@ func (f *configFetcher) fetchHTTPWithoutRedirect(ctx context.Context, baseURL st
 	if err != nil {
 		return nil, &fetcherError{EventId: 0, Err: err}
 	}
-	request.Header.Set("X-ConfigCat-UserAgent", "ConfigCat-Go/"+f.pollingIdentifier+"-"+version)
+	request.Header.Set("X-ConfigCat-UserAgent", "ConfigCat-Go/anativ-"+f.pollingIdentifier+"-"+version)
 
 	if prevConfig != nil && prevConfig.etag != "" {
 		request.Header.Add("If-None-Match", prevConfig.etag)
